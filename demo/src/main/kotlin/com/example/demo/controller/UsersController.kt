@@ -24,6 +24,11 @@ class UsersController {
         return usersService.getAll()
     }
 
+    @GetMapping("/{id}")
+    fun getUser(@PathVariable id: Long?): Users{
+        return usersService.getById(id)
+    }
+
     @PostMapping
     fun postNew(@RequestBody user: Users): Users{
         return usersService.postNew(user)

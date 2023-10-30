@@ -17,6 +17,10 @@ class UsersService {
         return usersRepository.findAll()
     }
 
+    fun getById(id: Long?): Users{
+        return usersRepository.findById(id)
+    }
+
     fun postNew(user: Users): Users{
         return usersRepository.save(user)
     }

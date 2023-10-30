@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController
 @SpringBootApplication
 class DemoApplication{
 	@GetMapping
-	fun helloWorld() = "hello world"
+	fun helloWorld() = "<h1>Hello world</h1>"
 }
 
 fun main(args: Array<String>) {
